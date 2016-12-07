@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/sortName" android:title="Name"></item>
+    <item android:id="@+id/sortCreationDate" android:title="Angelegt am"></item>
+    <item android:id="@+id/sortDueDate" android:title="Fällig am"></item>
+    <item android:id="@+id/sortPriority" android:title="Prioriät"></item>
+    <item android:id="@+id/sortStatus" android:title="Status"></item>
+    
+
+</menu>

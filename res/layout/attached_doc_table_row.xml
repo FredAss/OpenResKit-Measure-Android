@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/textItem1"
+        style="@style/TableItem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textAlignment="gravity"
+        android:gravity="end|bottom" 
+        android:padding="4dp"
+        android:textColor="@color/background_color_0"
+        />
+    
+
+    <TextView
+        android:id="@+id/textItem2"
+        style="@style/TableItem"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        
+        android:text="" />
+
+</TableRow>

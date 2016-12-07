@@ -1,0 +1,274 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color_0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/measureMainSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/background_color_4"
+            android:orientation="vertical"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/measureNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/measureCreationDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CreationDate"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/measureDueDateLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Fälligkeitsdatum"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <TextView
+                android:id="@+id/measureDueDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DueDate"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/measureResponsibleSubjectLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Verantwortlicher Mitarbeiter"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/measureResponsibleSubjectImage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="6dp"
+                    android:contentDescription="VerantwortlicherTyp" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/measureResponsibleSubjectTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ResponsibleSubject"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/measureStatusLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Maßnahmenstatus"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <TextView
+                android:id="@+id/measureStatusTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/measureEvaluationSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/background_color_4"
+            android:orientation="vertical"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/measureEntryDateLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Abgeschlossen am"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <TextView
+                android:id="@+id/measureEntryDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/measureEvaluationLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Bemerkung / Bewertung"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <TextView
+                android:id="@+id/measureEvaluationTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/measureRatingLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Wirksamkeit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <RatingBar
+                android:id="@+id/measureRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/measureDescriptionSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/background_color_4"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/measureDescriptionLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Beschreibung"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/background_color_3" />
+
+        <TextView
+            android:id="@+id/measureDescriptionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/measurePriorityLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Priorität"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/background_color_3" />
+
+        <TextView
+            android:id="@+id/measurePriorityTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/measureImageSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/background_color_4"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <ImageView
+            android:id="@+id/measureImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@color/background_color_2"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/measureAttachedDocsSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/background_color_4"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <LinearLayout
+            android:id="@+id/attachedDocContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/measureAttachImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/attachment"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/measureResponsibleSubjectTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Anhänge"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/attachedDocTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" >
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Example of items in the overflow menu -->
+    <item
+        android:id="@+id/startInspection"
+        android:showAsAction="always|withText"
+        android:title="Prüfung starten"
+        android:titleCondensed="Start"
+        android:visible="false">
+    </item>
+    <item
+        android:id="@+id/finishInspection"
+        android:showAsAction="always|withText"
+        android:title="Prüfung stoppen"
+        android:titleCondensed="Stop"
+        android:visible="false">
+    </item>
+    <item
+        android:id="@+id/startSync"
+        android:title="Daten abrufen">
+    </item>
+    <item
+        android:id="@+id/writeData"
+        android:title="Daten zurückspielen">
+    </item>
+    <item
+        android:id="@+id/deleteLocalData"
+        android:title="Lokale Daten löschen">
+    </item>
+    <item
+        android:id="@+id/showPreferences"
+        android:showAsAction="never"
+        android:title="Einstellungen"/>
+    <item
+        android:id="@+id/searchMeasures"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/action_search"
+        android:showAsAction="always"
+        android:title="Massnahmen durchsuchen"/>
+    <item
+        android:id="@+id/sortMeasures"
+        android:actionProviderClass="htw.bui.openreskit.measure.SortActionProvider"
+        android:icon="@drawable/collections_sort_by_size"
+        android:showAsAction="always"
+        android:title="Sortieren"/>
+    <item
+        android:id="@+id/addMeasure"
+        android:icon="@drawable/content_new"
+        android:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/addCatalog"
+        android:icon="@drawable/collections_add"
+        android:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/evaluateMeasure"
+        android:icon="@drawable/navigation_accept"
+        android:showAsAction="always">
+    </item>
+
+</menu>

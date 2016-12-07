@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="htw.bui.openreskit.measure"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/massnahmenmanagement"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.Light" >
+        <activity
+            android:name="htw.bui.openreskit.measure.CatalogActivity"
+            android:label="Maßnahmenmanagement" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Preferences" android:label="Einstellungen"></activity>
+        <activity android:name="ImageDetailActivity" android:label="Bilddetails"></activity>
+        <activity android:name="MeasureListActivity" android:label="Maßnahmen"></activity>
+        <activity android:name="MeasureInfoActivity" android:label="Maßnahmendetails"></activity>
+        <activity android:name="AddMeasureActivity" android:label="Maßnahme hinzufügen"></activity>
+        <activity android:label="Bewerten und Abschließen" android:name="EvaluateMeasureActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color_0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/measureEvaluationSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/background_color_4"
+            android:orientation="vertical"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/measureEvaluationLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Beschreibung"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <EditText
+                android:id="@+id/measureEvaluationTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/measureEvaluationRatingLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Wirksamkeit der Maßnahme"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <RatingBar
+                android:id="@+id/measureEvaluationRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:stepSize="1"
+                android:numStars="5" />
+
+            <TextView
+                android:id="@+id/measureEntryDateLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Abgeschlossen am"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <LinearLayout
+                android:id="@+id/calLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/measureEntryDateTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.1"
+                    android:paddingLeft="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageButton
+                    android:id="@+id/measureEntryDatePicker"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.9"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/collections_go_to_today" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
